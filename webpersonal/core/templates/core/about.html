@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Mi web personal | Acerca de{% endblock %}
+
+{% block background_image %} {% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock %}
+
+{% block headers %}
+<h1>Jaime Ríos</h1>
+<span class="subheading">Acerca de mi</span>
+{% endblock %}
+
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jaime Ríos</h2>   
+        <p>Soy un programador backend apasionado por crear sistemas robustos y eficientes que conectan aplicaciones y servicios de manera fluida. Si tienes un proyecto emocionante, necesitas optimizar tu infraestructura actual o simplemente quieres conversar sobre tecnología, ¡estoy aquí para ayudarte!</p>
+    </div>
+</div>   
+{% endblock %}
